@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="c:\Users\Thiago Alves\AppData\Local\Temp\d71e341b-fece-43bb-980c-4fbf89697eaf_icons8-dinheiro-na-mão-color.zip.eaf\icons8-dinheiro-na-mão-96.png">
+    
+    <title>Empréstimo</title>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js"></script>
+    <!-- font awesome -->
+   <script src="https://use.fontawesome.com/625f803fbf.js"></script>
+    <style>
+        *{
+            margin: 0; padding: 0; 
+            letter-spacing: 1px;
+        }
+        #btn{
+            left: 50px; 
+        }
+
+        .conteiner{
+            display: flex;
+    background-color: white;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    justify-content: center;
+        }
+        .card{
+            color: white;
+            width: 350px;
+    height: 450px;
+    background-color: black;
+    text-align: center;
+    backdrop-filter: blur(10px);
+        }
+        i{
+            background-color: green;
+            margin-top: 50%;
+        }
+        span{
+            display: flex;
+    margin-left: 30%;
+        }
+    </style>
+</head>
+<body>
+<div class="conteiner">
+<div class = "card">
+    <i class="fa fa-money" aria-hidden="true"></i>
+    <span>faz um pix p mim?</span>
+    <button id="bts" style=" position: absolute; width: 100px; ">sim</button>
+    <button id="btn" style=" position: absolute; width: 100px; ">não</button>
+</div>
+</div>
+<script>
+    $("#bts").click(
+        function (){
+            window.location.href="https://youtu.be/HKHQax_aQw8?si=uOUoVWpGKtVEWxWh"
+        }
+    );
+    $("#btn").hover(
+        function (){
+            change();
+        }
+    )
+
+    function change(){
+        var i = Math.floor(Math.random() * 200) + 1;
+        var b = Math.floor(Math.random() * 100) + 1;
+        
+        $("#btn").css({top:i + "px", left: b + "px"})
+    }
+</script>
+</body>
+</html>
